@@ -1,0 +1,316 @@
+#celestialTab {
+	background-color: transparent;
+	background: none;
+	padding: 0px;
+}
+
+#celestialTabs > .result-content, #dayTabContents > .result-content {
+	padding-top: 20px;
+}
+
+#dayTab {
+	margin-top: 0px;
+}
+
+#imageGalleryPopupBtn {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+#maintenanceNotification {
+	-moz-animation: blink 1s ease 0s infinite alternate;
+	-o-animation: blink 1s ease 0s infinite alternate;
+	-webkit-animation: blink 1s ease 0s infinite alternate;
+	animation: blink 1s ease 0s infinite alternate;
+	background-color: #ffff00;
+	left: 0;
+	padding: 10px 55px;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+#requestNotification {
+	-moz-animation: 1.5s slideIn;
+	-o-animation: 1.5s slideIn;
+	-webkit-animation: 1.5s slideIn;
+	animation: 1.5s slideIn;
+	background-color: #90ee90;
+	bottom: 15px;
+	padding: 15px 55px 15px 15px;
+	right: 15px;
+	text-align: left;
+	width: 300px;
+}
+
+#requestNotification > ul > li {
+	margin-bottom: 0px;
+	padding-top: 10px;
+}
+
+#currentUserActiveEntryRequestList > li {
+	margin-bottom: 0px;
+}
+
+#tabs > .tab {
+	padding: 10px 10px 0px 10px;
+	position: relative;
+}
+
+#zodiacDetail {
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+#zodiacSignIcons {
+	overflow: hidden;
+	position: relative;
+}
+
+#zodiacSun {
+	height: 140px;
+	left: 0;
+	margin: 80px;
+	opacity: 0.25;
+	position: absolute;
+	top: 0;
+}
+
+.btn-playall {
+	background-color: #6c757d;
+	border-radius: 5%;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.celestial-tab-col p {
+	margin-bottom: 12px;
+}
+
+.celestial-tab-col {
+	width: 160px;
+}
+
+.exit-button {
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.img-gallery-exit-button {
+	position: absolute;
+	left: 0;
+}
+
+.img-gallery-nav-button {
+	background-color: transparent;
+	border: none;
+	font-size: 32px;
+	height: 60px;
+	position: absolute;
+	top: 150px;
+	z-index: 1000;
+}
+
+.img-hour-tab-content {
+	border: none;
+	display: block;
+	height: 64px;
+	margin: auto;
+	text-align: center !important;
+	width: 48px;
+}
+
+.img-icon-square {
+	padding-bottom: 5px;
+}
+
+.img-icon-location {
+	border: none;
+	height: 250px;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.img-lunar-phase {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50px;
+}
+
+.img-star-culmination {
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 50px;
+}
+
+.img-planisphere {
+	border: none;
+	width: 300px;
+}
+
+.playall-active {
+	color: #ffff00;
+}
+
+.tab {
+	background-color: #e6cb9e;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font-family: "Unifraktur", serif;
+	font-size: 16px;
+	outline: none;
+	overflow: hidden;
+	padding: 14px 16px;
+	width: 100%;
+}
+
+.tab:hover, a.active {
+	background: -moz-radial-gradient(right bottom, ellipse cover, rgba(255,210,0,1) 0%, rgba(253,185,49,1) 20%, rgba(255,177,0,1) 25%, rgba(199,141,10,1) 45%, rgba(0,0,0,0) 80%),
+				-moz-radial-gradient(left top, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,172,1) 8%, rgba(209,180,100,1) 25%, rgba(197,157,46,1) 62.5%, rgba(255,141,0,1) 100%);
+	background: -webkit-radial-gradient(right bottom, ellipse cover, rgba(255,210,0,1) 0%,rgba(253,185,49,1) 20%,rgba(255,177,0,1) 25%,rgba(199,141,10,1) 45%,rgba(0,0,0,0) 80%),
+				-webkit-radial-gradient(left top, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,172,1) 8%,rgba(209,180,100,1) 25%,rgba(197,157,46,1) 62.5%,rgba(255,141,0,1) 100%);
+	background: radial-gradient(ellipse at right bottom, rgba(255,210,0,1) 0%,rgba(253,185,49,1) 20%,rgba(255,177,0,1) 25%,rgba(199,141,10,1) 45%,rgba(0,0,0,0) 80%),
+				radial-gradient(ellipse at left top, rgba(255,255,255,1) 0%,rgba(255,255,172,1) 8%,rgba(209,180,100,1) 25%,rgba(197,157,46,1) 62.5%,rgba(255,141,0,1) 100%);
+	background-color: #d8a052;
+}
+
+.verse {
+	padding-top: 15px;
+}
+
+@keyframes blink {
+	0% { background-color: #fff; }
+	50% { background-color: #ffff80; }
+	100% { background-color: #ffff00; }
+}
+
+@keyframes slideIn {
+	0% { opacity:0; transform: translateX(100%); }
+	100% { opacity:1; transform: translateX(0); }
+}
+
+audio {
+	padding-top: 20px;
+	width: 100%;
+}
+
+div.commemoration {
+	margin-top: 30px;
+}
+
+div.commemoration-detail {
+	padding: 20px;
+}
+
+div.commemoration-title {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 28px;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
+}
+
+div.gallery-tab {
+	position: absolute;
+	top: 30px;
+	padding: 5px;
+}
+
+div.gallery-window {
+	-moz-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-ms-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-o-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-webkit-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	background-color: #fff;
+	box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	height: 350px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: fixed;
+	text-align: center;
+	top: 24%;
+	width: 0px;
+	z-index: 999;
+}
+
+div.gallery-window.active {
+	width: 350px;
+}
+
+div.hour {
+	width: 100%;
+}
+
+div.hour-content {
+	border-top: none;
+	border: 1px solid #ccc;
+	display: none;
+	padding: 6px 12px;
+}
+
+div.hour-tab-content {
+	background-color: #f1f1f1;
+	padding: 0px 20px 20px 20px;
+	width: 100%;
+}
+
+div.notification-window {
+	-moz-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-ms-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-o-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-webkit-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	cursor: pointer;
+	font-family: "Consolas", Monaco, monospace;
+	font-size: 12px;
+	height: auto;
+	min-height: 50px;
+	position: fixed;
+	transition: 0.5s;
+	z-index: 969;
+}
+
+div.text-area {
+	max-width: 600px;
+	width: 95vw;
+}
+
+i.detail {
+	color: #383838;
+	font-family: "Palatino Linotype", Palatino, serif;
+}
+
+li {
+	margin-bottom: 12px;
+}
+
+td.calendar-detail {
+	color: #383838;
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 12px;
+	font-style: normal;
+	vertical-align: top;
+}
+
+td.calendar-tab {
+	width: 48px;
+}
+
+ul {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-inline-start: 20px;
+}

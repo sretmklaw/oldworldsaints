@@ -1,0 +1,199 @@
+#bottomPagination {
+	margin-top: 30px;
+}
+
+.arrow {
+	bottom: -16px;
+	height: 16px;
+	left: 50%;
+	margin-left: -35px;
+	overflow: hidden;
+	position: absolute;
+	width: 70px;
+}
+
+.arrow.left {
+	left: 20%;
+}
+
+.arrow.top {
+	bottom: auto;
+	top: -16px;
+}
+
+.arrow:after {
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	box-shadow: 6px 5px 9px -9px black;
+	content: "";
+	height: 25px;
+	left: 20px;
+	position: absolute;
+	top: -20px;
+	transform: rotate(45deg);
+	width: 25px;
+}
+
+.arrow.top:after {
+	bottom: -20px;
+	top: auto;
+}
+
+.col-label {
+	color: #808080;
+	font-size: 12px;
+	font-style: normal;
+	padding: 5px 10px 5px 0px;
+}
+
+.col-value {
+	padding: 5px;
+}
+
+.collapsing {
+	-moz-transition: height 0.5s ease-in-out;
+	-ms-transition: height 0.5s ease-in-out;
+	-o-transition: height 0.5s ease-in-out;
+	-webkit-transition: height 0.5s ease-in-out;
+	transition: height 0.5s ease-in-out;
+}
+
+.current-page {
+	color: #000;
+	font-weight: bold;
+}
+
+.date-name {
+	color: #484848;
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 12px;
+	font-style: normal;
+	font-style: normal;
+}
+
+.edit-button {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	z-index: 979;
+}
+
+.expandable {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.3s;
+}
+
+.result-content {
+	background-color: #fff;
+}
+
+.result-content, .result-content-parent {
+	padding: 0px 20px 20px 20px;
+	text-align: left;
+	transition: max-height 0.2s ease-out;
+	width: 100%;
+}
+
+.result-content-parent {
+	background-color: #f1f1f1;
+}
+
+.result-header, .result-header-parent {
+	background-color: #e6cb9e;
+	border: none;
+	color: black;
+	cursor: pointer;
+	font-family: "Unifraktur", serif;
+	font-size: 18px;
+	margin-top: 18px;
+	outline: none;
+	padding: 14px;
+	text-align: left;
+	width: 100%;
+}
+
+.result-header:hover, .result-header-parent:hover, .result-header.active, .result-header-parent.active {
+	background: -moz-radial-gradient(right bottom, ellipse cover, rgba(255,210,0,1) 0%, rgba(253,185,49,1) 20%, rgba(255,177,0,1) 25%, rgba(199,141,10,1) 45%, rgba(0,0,0,0) 80%),
+				-moz-radial-gradient(left top, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,172,1) 8%, rgba(209,180,100,1) 25%, rgba(197,157,46,1) 62.5%, rgba(255,141,0,1) 100%);
+	background: -webkit-radial-gradient(right bottom, ellipse cover, rgba(255,210,0,1) 0%,rgba(253,185,49,1) 20%,rgba(255,177,0,1) 25%,rgba(199,141,10,1) 45%,rgba(0,0,0,0) 80%),
+				-webkit-radial-gradient(left top, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,172,1) 8%,rgba(209,180,100,1) 25%,rgba(197,157,46,1) 62.5%,rgba(255,141,0,1) 100%);
+	background: radial-gradient(ellipse at right bottom, rgba(255,210,0,1) 0%,rgba(253,185,49,1) 20%,rgba(255,177,0,1) 25%,rgba(199,141,10,1) 45%,rgba(0,0,0,0) 80%),
+				radial-gradient(ellipse at left top, rgba(255,255,255,1) 0%,rgba(255,255,172,1) 8%,rgba(209,180,100,1) 25%,rgba(197,157,46,1) 62.5%,rgba(255,141,0,1) 100%);
+	background-color: #d8a052;
+	color: black;
+}
+
+.search-detail {
+	background-color: #fff;
+	padding: 12px;
+	margin: 15px auto;
+}
+
+.tag-sticky {
+	-moz-box-shadow: -2px 1px 3px rgba(0,0,0,0.3), -2px 3px 3px rgba(0,0,0,0.2);
+	-mx-box-shadow: -2px 1px 3px rgba(0,0,0,0.3), -2px 3px 3px rgba(0,0,0,0.2);
+	-o-box-shadow: -2px 1px 3px rgba(0,0,0,0.3), -2px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: -2px 1px 3px rgba(0,0,0,0.3), -2px 3px 3px rgba(0,0,0,0.2);
+	background-color:#fffacd;
+	border-radius: 3px 0 3px 3px;
+	box-shadow: -2px 1px 3px rgba(0,0,0,0.3), -2px 3px 3px rgba(0,0,0,0.2);
+	display: inline-flex;
+	margin: 5px;
+	overflow: hidden;
+	padding: 5px;
+	position: relative;
+	vertical-align: bottom;
+}
+
+.tag-sticky:before {
+	background: #d3d3d3;
+	border-color: #fff #fff #d3d3d3 #d3d3d3;
+	border-color: #fff #fff transparent transparent;
+	border-style: solid;
+	border-width: 0 16px 16px 0;
+	border-width: 5px;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+}
+
+.top-padded {
+	padding-top: 20px;
+}
+
+.ui-tooltip, .arrow:after {
+	background: #fff;
+	border: 2px solid white;
+}
+.ui-tooltip {
+	background: #fff;
+	box-shadow: 0 0 7px #000;
+	color: #000;
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 12px;
+	font-style: normal;
+	padding: 5px;
+	white-space: nowrap;
+}
+
+.verse {
+	padding-top: 15px;
+}
+
+button {
+	font-family: "Palatino Linotype", Palatino, serif;
+}
+
+div.none-found {
+	background-color: #fff;
+	padding: 30px;
+}
+
+div.text-area {
+	max-width: 600px;
+	width: 95vw;
+}

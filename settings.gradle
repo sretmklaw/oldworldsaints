@@ -1,0 +1,9 @@
+rootProject.name = 'cimeliarchium-web-app'
+
+if (System.getenv('LOCAL_COMPILATION') == 'true') {
+    includeBuild('../cimeliarchium-artifacts') {
+        dependencySubstitution {
+            substitute module('org.cimeliarchium:cimeliarchium-artifacts') with project(':')
+        }
+    }
+}

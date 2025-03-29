@@ -1,0 +1,25 @@
+.checkbox {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.checkbox-input {
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.default-option {
+	color: #495057
+}
+
+div.container, div.row {
+	height: 100vh;
+}
+
+div.text-area {
+	max-width: 300px;
+}
+
+p, input {
+	padding-top: 15px;
+}

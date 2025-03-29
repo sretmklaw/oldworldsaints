@@ -1,0 +1,87 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.springframework.boot' version "${dependencySpringBootVersion}"
+}
+
+repositories {
+    maven {
+       url = 'file://C:/tmp/'
+    }
+    mavenCentral()
+}
+
+configurations {
+    artifactsZip
+}
+
+dependencies {
+    artifactsZip "org.cimeliarchium:cimeliarchium-artifacts:$dependencyArtifactsVersion"
+    implementation "com.google.code.gson:gson:$dependencyGsonVersion"
+    implementation "com.google.guava:guava:$dependencyGuavaVersion", { transitive = false }
+    implementation "com.paypal.sdk:checkout-sdk:$dependencyPaypalVersion"
+    implementation "com.sun.xml.bind:jaxb-impl:$dependencyJaxbImplVersion"
+    implementation "commons-beanutils:commons-beanutils:$dependencyCommonsBeanutilsVersion", { transitive = false }
+    implementation "commons-io:commons-io:$dependencyCommonsIOVersion", { transitive = false }
+    implementation "javax.activation:activation:$dependencyJavaxActivation"
+    implementation "javax.xml.bind:jaxb-api:$dependencyJaxbVersion"
+    implementation "javax.persistence:javax.persistence-api:$dependencyJavaxPersistenceApiVersion"
+    implementation "javax.servlet:javax.servlet-api:$dependencyJavaxServletApiVersion"
+    implementation "javax.servlet:jstl:$dependencyJstlVersion"
+    implementation "javax.validation:validation-api:$dependencyJavaxValidationApiVersion"
+    implementation "joda-time:joda-time:$dependencyJodaTimeVersion"
+    implementation "org.apache.commons:commons-lang3:$dependencyApacheCommonsLang3Version", { transitive = false }
+    implementation "org.apache.httpcomponents:httpclient:$dependencyHttpClientVersion"
+    implementation "org.apache.pdfbox:pdfbox:$dependencyPdfboxVersion", { transitive = false }
+    implementation "org.apache.pdfbox:fontbox:$dependencyPdfboxVersion", { transitive = false }
+    implementation "org.apache.poi:poi-ooxml:$dependencyPoiVersion"
+    implementation "org.apache.poi:poi:$dependencyPoiVersion"
+    implementation "org.apache.tomcat.embed:tomcat-embed-jasper:$dependencyApacheTomcatEmbedJasperVersion"
+    implementation "org.glassfish.jaxb:jaxb-runtime:$dependencyJaxbImplVersion", { transitive = false }
+    implementation "org.hibernate:hibernate-validator:$dependencyHibernateValidatorVersion", { transitive = false }
+    implementation "org.postgresql:postgresql:$dependencyPostgresqlVersion"
+    implementation "org.slf4j:slf4j-api:$dependencySlf4jVersion"
+    implementation "org.springframework.boot:spring-boot-gradle-plugin:$dependencySpringBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:$dependencySpringBootVersion", { exclude group: 'org.glassfish.jaxb' }
+    implementation "org.springframework.boot:spring-boot-starter-web:$dependencySpringBootVersion"
+    implementation "org.springframework.security:spring-security-config:$dependencySpringSecurityVersion", { transitive = false }
+    implementation "org.springframework.security:spring-security-core:$dependencySpringSecurityVersion", { transitive = false }
+    implementation "org.springframework.security:spring-security-crypto:$dependencySpringSecurityVersion", { transitive = false }
+    implementation "org.springframework.security:spring-security-web:$dependencySpringSecurityVersion", { transitive = false }
+    runtimeOnly "org.webjars:bootstrap:$dependencyWebjarsBootstrapVersion"
+    runtimeOnly "org.webjars:datatables:$dependencyWebjarsDatatablesVersion"
+    runtimeOnly "org.webjars:jquery-ui:$dependencyWebjarsJqueryUIVersion"
+    runtimeOnly "org.webjars:jquery:$dependencyWebjarsJqueryVersion"
+    runtimeOnly "org.webjars:leaflet:$dependencyWebjarsLeafletVersion"
+    runtimeOnly "org.webjars:webjars-locator-core:$dependencyWebjarsLocatorCoreVersion", { exclude group: 'org.slf4j' }
+    testImplementation "junit:junit:$dependencyJunitVersion"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$dependencyJupiterApiVersion", { transitive = false }
+    testImplementation "org.mockito:mockito-core:$dependencyMockitoVersion"
+    testImplementation "org.powermock:powermock-api-easymock:$dependencyPowermockVersion"
+    testImplementation "org.springframework.boot:spring-boot-test-autoconfigure:$dependencySpringBootVersion", { transitive = false }
+    testImplementation "org.springframework.boot:spring-boot-test:$dependencySpringBootVersion", { transitive = false }
+    testImplementation "org.springframework:spring-test:$dependencySpringTestVersion", { transitive = false }
+    testImplementation "org.springframework.security:spring-security-test:$dependencySpringSecurityVersion", { transitive = false }
+}
+
+test {
+    filter {
+        includeTestsMatching "*TestSuite"
+    }
+}
+
+war {
+    enabled = false
+}
+
+bootWar {
+    enabled = true
+    launchScript()
+    manifest {
+        attributes 'Implementation-Version':  archiveVersion
+    }
+    from(zipTree(configurations.artifactsZip.singleFile)) {
+        include '**/*'
+        into("static/")
+    }
+}

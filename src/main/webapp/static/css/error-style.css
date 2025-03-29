@@ -1,0 +1,42 @@
+.editable-input {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.form-group {
+	width: 100%;
+}
+
+.read-only-input {
+	background-color: transparent !important;
+	border: none;
+	height: auto;
+	padding: 0px;
+	pointer-events:none;
+}
+
+div.container, div.row {
+	height: 100vh;
+}
+
+div.content {
+	background-color: #fff;
+	padding: 20px;
+}
+
+p {
+	text-align: center;
+}
+
+table {
+	font-family: "Consolas", Monaco, monospace;
+}
+
+th {
+	width: 30px;
+}
+
+th, td {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}

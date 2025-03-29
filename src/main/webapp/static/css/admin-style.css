@@ -1,0 +1,91 @@
+.btn-secondary {
+	background-color: #d3d3d3;
+	border-color: #fff;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.input {
+	font-family: "Consolas", Monaco, monospace;
+	min-height: 30px;
+	text-align: center;
+}
+
+.isAdminUser {
+	color: #ff0000;
+}
+
+.paginate_button {
+	margin: 0px 15px;
+}
+
+.preview-count {
+	background-color: #fff;
+}
+
+.result-content {
+	padding: 20px;
+}
+
+.retired {
+	opacity: 0.33;
+}
+
+.textarea {
+	height: 80px;
+}
+
+div.alert {
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+div.dataTables_filter, div.dataTables_length, div.dataTables_paginate, div.dataTables_buttons {
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 0px 15px;
+}
+
+div.dataTables_filter, div.dataTables_paginate {
+	float: left;
+}
+
+div.dataTables_length, div.dataTables_buttons {
+	float: right;
+}
+
+div.text-area {
+	width: 450px !important;
+}
+
+label > input {
+	margin-left: 10px;
+	width: 150px;
+}
+
+td {
+	text-align: center;
+}
+
+th {
+	background-color: #d3d3d3;
+	color: #808080;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+}
+
+th.select-all {
+	text-align: center;
+}
+
+tr.even {
+	background-color: #e4e4e4;
+}

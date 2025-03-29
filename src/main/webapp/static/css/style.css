@@ -1,0 +1,379 @@
+#loading {
+	align-items: center;
+	background-color: #000;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 998;
+}
+
+#loading-image {
+	height: 400px;
+	z-index: 999;
+}
+
+#refreshBtn {
+	background: transparent;
+	border: none !important;
+}
+
+#refreshBtn:focus {
+	outline: 1px dotted !important;
+}
+
+#refreshIcon {
+	-moz-transition: transform 1s;
+	-ms-transition: transform 1s;
+	-o-transition: transform 1s;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+#searchBtn {
+	background: transparent;
+	border: none !important;
+}
+
+#timeoutMask {
+	z-index: 997;
+}
+
+.alert, .alert-non-padded {
+	color: #ff0000;
+	display: block;
+	padding: 0px;
+}
+
+.alert-non-padded {
+	margin: 0px;
+}
+
+.captcha-text-input {
+	display: inline-block;
+	margin-top: 1rem;
+	max-width: 200px;
+}
+
+.detail {
+	color: #808080;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.divider {
+	color: #d3d3d3;
+	font-size: 10px;
+	font-style: normal;
+}
+
+.hidden {
+	display: none !important;
+	height: 0px;
+	padding-top: 0px;
+}
+
+.how-to-link > span {
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-transform: 12px;
+	-webkit-transform: 12px;
+	transform: 12px;
+	background-color: #808080;
+	border-radius: 12px;
+	font-size: 18px;
+	line-height: 16px;
+	padding: 0px 8px 0px 8px;
+	text-align: center;
+}
+
+.how-to-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.how-to-link:hover {
+	color: #ffff00;
+	text-decoration: none;
+}
+
+.img-icon-horizontal {
+	border: none;
+	height: 24px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+.img-icon-patronage, .img-icon-patronage-small, .img-icon-patronage-cm {
+	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1.0) 25%, rgba(255,255,255,0) 70%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1.0) 25%,rgba(255,255,255,0) 70%);
+	background: radial-gradient(ellipse at center, rgba(0,0,0,1.0) 25%,rgba(255,255,255,0) 70%);
+	margin-bottom: 0px;
+	opacity: 1;
+}
+
+.img-icon-patronage {
+	padding: 10px;
+	width: 150px;
+}
+
+.img-icon-patronage-cm {
+	height: 46px;
+	width: 32px;
+}
+
+.img-icon-patronage-small {
+	padding: 5px;
+	width: 60px;
+	margin-left: -30px;
+}
+
+.img-icon-square-large {
+	border: none;
+	height: 80px;
+	vertical-align: middle;
+	width: 80px;
+}
+
+.img-icon-square {
+	border: none;
+	height: 42px;
+	vertical-align: middle;
+	width: 42px;
+}
+
+.img-icon-square-small {
+	border: none;
+	height: 32px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+.img-icon-vertical {
+	border: none;
+	height: 48px;
+	vertical-align: middle;
+	width: 24px;
+}
+
+.numeral {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-style: normal;
+}
+
+.preview-count {
+	background-color: #fff;
+	border-radius: 25%;
+	float: right;
+	font-family: "Consolas", Monaco, monospace;
+	padding: 0px 10px;
+}
+
+.rotate {
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.success {
+	color: #008000;
+	display: block;
+	padding: 0px;
+	margin-bottom: 12px;
+}
+
+.tab {
+	text-align: left;
+}
+
+.text-input {
+	display: grid;
+}
+
+.visible {
+	display: block;
+}
+
+body {
+	font-family: "Palatino Linotype", Palatino, serif;
+}
+
+div.page-mask {
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 988;
+}
+
+div.page-mask.active {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 100%;
+}
+
+div.text-area {
+	background-color: #f0f0e1;
+	margin: 60px 0px;
+	padding: 20px;
+	width: 400px;
+	z-index: 10;
+}
+
+div.timeout-warning {
+	-moz-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-ms-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-o-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	-webkit-box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	background-color: #fff;
+	box-shadow: 0px 1px 3px 3px rgb(0 0 0 / 30%);
+	cursor: pointer;
+	display: none;
+	height: 115px;
+	left: calc(50% - 175px);
+	margin-bottom: 0px;
+	padding: 10px;
+	position: fixed;
+	text-align: center;
+	top: calc(50% - 57px);
+	transition: 0.5s;
+	width: 350px;
+	z-index: 998;
+}
+
+div.wrapper {
+	height: 100%;
+	left: 0;
+	padding: 30px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+h1 {
+	font-family: "Old English", serif;
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-family: "Old English", serif;
+	font-size: 28px;
+	padding: 3px;
+	text-align: left;
+}
+
+h3 {
+	font-family: "Unifraktur", serif;
+	font-size: 18px;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
+	text-align: left;
+}
+
+h4 {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 28px;
+	margin: 1px;
+	padding: 1px;
+	text-align: center;
+}
+
+html {
+	background-repeat: repeat;
+}
+
+html, body {
+	background-color: transparent;
+	height: 100%;
+}
+
+i.indent {
+	display: block;
+	margin-left: 30px;
+}
+
+i.initial {
+	color: #ff0000;
+	font-family: "Old English", serif;
+	font-size: 48px;
+	font-style: normal;
+}
+
+i.latin-text {
+	display: inline-block;
+	font-family: "Old English", serif;
+	font-style: normal;
+	padding-bottom: 15px;
+	text-indent: 35px;
+}
+
+img.flag {
+	-moz-box-shadow: 0px 0px 2px 0.25px #000;
+	-ms-box-shadow: 0px 0px 2px 0.25px #000;
+	-o-box-shadow: 0px 0px 2px 0.25px #000;
+	-webkit-box-shadow: 0px 0px 2px 0.25px #000;
+	box-shadow: 0px 0px 2px 0.25px #000;
+	margin: 0px 5px;
+}
+
+table {
+	border-style: none;
+	width: 100%;
+}
+
+td.align-left {
+	margin-bottom: 0px;
+	text-align: left;
+	width: 180px;
+}
+
+td.align-right {
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+textarea {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+th {
+	padding-right: 15px;
+	vertical-align: top;
+}
+
+@font-face {
+	font-family: "Unifraktur";
+	src: url('unifrakturmaguntia-webfont.woff2') format('woff2'),
+		url('unifrakturmaguntia-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Old English";
+	src: url('old_english_five-webfont.woff2') format('woff2'),
+		url('old_english_five-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
